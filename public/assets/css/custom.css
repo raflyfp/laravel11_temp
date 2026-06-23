@@ -1,0 +1,108 @@
+/* Custom CSS for SNA Medika Brand (Red and Charcoal Theme) */
+
+:root {
+  --sna-primary: #D6001C;
+  --sna-primary-hover: #b30015;
+  --sna-primary-light: rgba(214, 0, 28, 0.1);
+  --sna-primary-gradient: linear-gradient(310deg, #D6001C 0%, #FF3D57 100%);
+  --sna-dark: #1e1e2d;
+}
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--sna-primary) !important;
+  border-color: var(--sna-primary) !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: var(--sna-primary-hover) !important;
+  border-color: var(--sna-primary-hover) !important;
+}
+.btn-outline-primary {
+  color: var(--sna-primary) !important;
+  border-color: var(--sna-primary) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--sna-primary) !important;
+  color: #fff !important;
+}
+
+/* Form inputs */
+.form-control:focus {
+  border-color: var(--sna-primary) !important;
+  box-shadow: 0 0 0 2px rgba(214, 0, 28, 0.25) !important;
+}
+.form-check-input:checked {
+  background-color: var(--sna-primary) !important;
+  border-color: var(--sna-primary) !important;
+}
+
+/* Typography & Text */
+.text-primary {
+  color: var(--sna-primary) !important;
+}
+.text-gradient.text-primary {
+  background-image: var(--sna-primary-gradient) !important;
+}
+
+/* Background Gradients */
+.bg-gradient-primary {
+  background-image: var(--sna-primary-gradient) !important;
+}
+
+/* Sidebar Active Menu Item Styling */
+.navbar-vertical .navbar-nav > .nav-item .nav-link.active {
+  background-color: var(--sna-primary-light) !important;
+}
+.navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon i {
+  color: var(--sna-primary) !important;
+}
+.navbar-vertical .navbar-nav > .nav-item .nav-link.active .nav-link-text {
+  color: #344767 !important;
+  font-weight: 600;
+}
+
+/* Sidenav icons */
+.navbar-vertical .navbar-nav > .nav-item .nav-link:hover .icon i {
+  color: var(--sna-primary) !important;
+}
+
+/* Shadow styling */
+.shadow-primary {
+  box-shadow: 0 4px 20px 0 rgba(214, 0, 28, 0.14), 0 7px 10px -5px rgba(214, 0, 28, 0.4) !important;
+}
+
+/* Header Background */
+.bg-dark-header {
+  background: linear-gradient(135deg, #1A1A24 0%, #111118 100%) !important;
+}
+
+/* Card Icons or shape backgrounds */
+.icon-shape.bg-gradient-primary {
+  background-image: var(--sna-primary-gradient) !important;
+}
+
+/* Styling Submenu Sidebar */
+.navbar-vertical .navbar-nav .nav-item .collapse .nav {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link {
+  font-weight: 500;
+  padding: 8px 16px;
+  color: #67748e !important;
+  font-size: 0.825rem;
+}
+
+.navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link:hover {
+  color: var(--sna-primary) !important;
+}
+
+/* Rotasi Icon Arrow */
+.navbar-vertical .navbar-nav .nav-item .nav-link[data-bs-toggle="collapse"] i.ni-bold-down {
+  transition: transform 0.2s ease;
+}
+
+.navbar-vertical .navbar-nav .nav-item .nav-link[data-bs-toggle="collapse"]:not(.collapsed) i.ni-bold-down {
+  transform: rotate(180deg);
+}
